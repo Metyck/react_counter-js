@@ -15,6 +15,7 @@ export const App = () => {
   };
 
   const increase = () => {
+    // write your code here
     addOne();
 
     if (count % 5 === 0) {
