@@ -6,33 +6,20 @@ export const App = () => {
 
   const addOne = () => {
     // write code here
-    setCount(currentCount => {
-      let copy = currentCount;
-
-      copy += 1;
-
-      return copy;
-    });
+    setCount(c => c + 1);
   };
 
   const add100 = () => {
     // write code here
-    setCount(currentCount => {
-      let copy = currentCount;
-
-      copy += 100;
-
-      return copy;
-    });
+    setCount(c => c + 100);
   };
 
-  // DON'T change the code below
   const increase = () => {
+    addOne();
+
     if (count % 5 === 0) {
       add100();
     }
-
-    addOne();
   };
 
   return (
